@@ -7,8 +7,11 @@
     git --global user.email "seu_email@dominio.com.br"
 
 ### Para criar repositório local para depois subir ao repositório remoto:
+
 //Inicia repositório (.git)
+
     git init
+
 
 ### Para baixar o repositório remoto para a máquina local:
     git clone <URL do repositório>
@@ -24,8 +27,11 @@
 
 ### Adicionar arquivos ao repositório:
     git add <caminho do arquivo>
+
 ou, para adicionar todas as alterações:
+
     git add .
+
 
 ### Realizar commit das alterações localmente:
     git commit -m "Descrição da alteração"
@@ -35,16 +41,22 @@ ou, para adicionar todas as alterações:
 
 ### Para subir as alterações para o repositório remoto:
     git push origin <nome da branch>
+
 Exemplo:
+
     git push origin master
+
 
 ### Para baixar os arquivos do repositório remoto para o repositório local:
     git pull
 
 ### Mostrar histórico:
     git log
+
 Mostrar o histórico em uma linha:
+
     git log --oneline
+
 
 ### Configurando o proxy no GIT:
     git config --global http.proxy http://domain\user:password@proxy.com.br:8080
