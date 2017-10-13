@@ -1,6 +1,7 @@
 # Comandos do GIT
 
-[Clique aqui para baixar o client do GIT](https://git-scm.com target="_blank")
+[Clique aqui para baixar o client do GIT](https://git-scm.com)
+<a href="https://git-scm.com" target="_blank">Clique aqui para baixar o client do GIT</a>
 
 ### Configurações globais:
     git --global user.name "Seu nome completo"
