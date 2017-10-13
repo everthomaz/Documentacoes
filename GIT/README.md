@@ -59,4 +59,11 @@ Mostrar o histórico em uma linha:
 
 
 ### Configurando o proxy no GIT:
+
+Para habilitar:
+
     git config --global http.proxy http://domain\user:password@proxy.com.br:8080
+
+Para desabilitar:
+
+    git config --global --unset http.proxy
