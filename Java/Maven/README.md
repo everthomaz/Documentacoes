@@ -2,7 +2,7 @@
 
 ### Para configurar o proxy no Maven:
 
-Configurar o arquivo: <home_user>/.m2/settings.xml
+Configurar o arquivo: <home_user>/.m2/settings.xml  
 Se não existir o arquivo settings.xml, criar o arquivo.
 
     <settings>
