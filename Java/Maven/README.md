@@ -20,3 +20,22 @@ Se não existir o arquivo settings.xml, criar o arquivo.
     	</proxies>
     </settings>
 
+
+### Para configurar um repositório privado no Maven:
+
+Abrir o arquivo pom.xml e adicionar antes da tag "dependencies":    
+
+    <pluginRepositories>
+    	<pluginRepository>
+    		<id>al</id>
+    		<url>http://99.99.99.99:8080/repository/maven-public/</url>
+    		<name>private repository</name>
+    		</pluginRepository>
+    	</pluginRepositories>
+    	<repositories>
+    		<repository>
+    			<id>al</id>
+    			<url>http://99.99.99.99:8080/repository/maven-public/</url>
+    			<name>private repository</name>
+    		</repository>
+    	</repositories>
