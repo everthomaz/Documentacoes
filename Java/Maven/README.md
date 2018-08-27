@@ -30,12 +30,12 @@ Abrir o arquivo pom.xml e adicionar antes da tag "dependencies":
     		<id>al</id>
     		<url>http://99.99.99.99:8080/repository/maven-public/</url>
     		<name>private repository</name>
-    		</pluginRepository>
-    	</pluginRepositories>
-    	<repositories>
-    		<repository>
-    			<id>al</id>
-    			<url>http://99.99.99.99:8080/repository/maven-public/</url>
-    			<name>private repository</name>
-    		</repository>
-    	</repositories>
+    	</pluginRepository>
+    </pluginRepositories>
+    <repositories>
+    	<repository>
+    		<id>al</id>
+    		<url>http://99.99.99.99:8080/repository/maven-public/</url>
+    		<name>private repository</name>
+    	</repository>
+    </repositories>
