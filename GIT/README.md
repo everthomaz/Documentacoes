@@ -6,6 +6,9 @@
     git --global user.name "Seu nome completo"
     git --global user.email "seu_email@dominio.com.br"
 
+### Usar o comando abaixo para configurar o seu gitBash a aceitar longos caminhos de diretórios:
+    git config --system core.longpaths true
+
 ### Para criar repositório local para depois subir ao repositório remoto:
 
 //Inicia repositório (.git)
@@ -45,6 +48,7 @@ ou, para adicionar todas as alterações:
 Exemplo:
 
     git push origin master
+    git push --set-upstream origin <nome da branch>
 
 
 ### Para baixar os arquivos do repositório remoto para o repositório local:
