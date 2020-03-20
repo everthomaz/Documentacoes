@@ -82,6 +82,9 @@ Exemplo:
     git push --set-upstream origin <nome da branch>
 
 
+### Realizar o reset do repositório local:
+    git reset --hard origin/20200517-E1
+
 ### Para baixar os arquivos do repositório remoto para o repositório local:
     git pull
 
@@ -91,5 +94,3 @@ Exemplo:
 Mostrar o histórico em uma linha:
 
     git log --oneline
-
-
