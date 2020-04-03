@@ -24,6 +24,32 @@
 
     Spool off
     Exit
-    
 
 
+
+### Queries úteis
+
+##### Processamento de eventos
+
+-- BIZEVENT: Tabela onde ficam todos os eventos.
+
+    SELECT * FROM SAVVIONCORP_OWNER.BIZEVENT;
+    SELECT MAX(EVENT_ID) FROM SAVVIONCORP_OWNER.BIZEVENT;
+
+-- BIZSTOREEVENTCOUNTER: Tabela guarda o último evento processado.
+
+    SELECT * FROM SAVVIONCORP_OWNER.BIZSTOREEVENTCOUNTER;
+
+<br/>
+
+##### Localiza a instância através do nome do componente e um dataslot.
+--Componente: SERVICEORDERMNGMT_V10<br/>
+--Dataslot: PURCHASEORDERNUMBER
+
+    select PROCESS_INSTANCE_ID from SERVICEORDERMNGMT_V10 where PURCHASEORDERNUMBER = '1-11839935972';
+
+<br/>
+
+##### Adianta uma tarefa que está aguardando um tempo de execução (timer).
+
+    update BIZLOGIC_TIMERACTION set duedate = 0 where process_instance_id = '335716';
