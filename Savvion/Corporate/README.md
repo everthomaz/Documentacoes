@@ -53,3 +53,9 @@
 ##### Adianta uma tarefa que está aguardando um tempo de execução (timer).
 
     update BIZLOGIC_TIMERACTION set duedate = 0 where process_instance_id = '335716';
+
+<br/>
+
+##### Query busca URL:
+    
+    SELECT 'http://svuxqa6soa64:8080/sbm/bpmportal/myhome/psv_table_view.jsp?PTID='||PT.PROCESS_TEMPLATE_ID||'&'||'PIID='||PI.PROCESS_INSTANCE_ID||'&' ||'piName='||RAWTOHEX(PT.PROCESS_TEMPLATE_NAME||'#'||PI.PROCESS_INSTANCE_ID)||'&'||'link=status'           FROM savvioncorp_owner.PROCESSINSTANCE PI           INNER JOIN savvioncorp_owner.PROCESSTEMPLATE PT ON PT.PROCESS_TEMPLATE_ID = PI.PROCESS_TEMPLATE_ID           WHERE PI.PROCESS_INSTANCE_ID = (select PROCESS_INSTANCE_ID from savvioncorp_owner.serviceordermngmt_v10 where purchaseordernumber = '1-11847386176');
