@@ -94,3 +94,13 @@ Exemplo:
 Mostrar o histórico em uma linha:
 
     git log --oneline
+
+
+### Solução de problemas:
+    ERRO:
+    $ git pull
+    error: cannot lock ref 'refs/remotes/origin/pre-prod': is at 141876494ac7e0b9f09
+    
+    SOLUÇÃO:
+    $ rm .git/refs/remotes/origin/<BRANCH>
+    $ git pull
