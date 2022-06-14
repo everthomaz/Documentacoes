@@ -339,3 +339,10 @@ Também podemos ver mais informações específicas sobre diferentes Cloud Providers
 [GCP](https://cloud.google.com/kubernetes-engine/docs/concepts/verticalpodautoscaler)
 [AWS](https://docs.aws.amazon.com/eks/latest/userguide/vertical-pod-autoscaler.html)
 
+
+
+## Comandos para Azure:
+
+Para acessar um container no Azure.
+
+    kubectl exec -it <pod_name> --namespace <namespace_name> -c <container_name> -- /bin/bash
