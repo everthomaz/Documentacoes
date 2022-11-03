@@ -24,6 +24,9 @@
 ### Consumir mensagens de um determinado tópico (desde o início, todas as mensagens)
     bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic NOME_DO_TOPICO --from-beginning
 
+### Consumir mensagens de um determinado tópico (especificando o Group ID)
+    bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic NOME_DO_TOPICO --consumer-property group.id=nome-do-group-id
+
 ### Descrever os conteúdos dos tópicos
     bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe
     bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic NOME_DO_TOPICO
