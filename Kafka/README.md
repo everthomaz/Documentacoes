@@ -39,23 +39,40 @@
 
 ### Replicação em cluster
 Necessário criar um arquivo de configuração config/server.properties para cada réplica (cluster).
+
 Exemplo: Réplica 1 = server.properties / Réplica 2 - server2.properties / Réplica 3 - server3.properties
+
+&nbsp;
 
 Parâmetros que devem ser ajustados em cada arquivo de configuração para cada réplica:
 
 The id of the broker. This must be set to a unique integer for each broker.
+
 Colocar 1 ID único para cada réplica.
-broker.id=0
+    
+    broker.id=0
+
+&nbsp;
 
 A comma separated list of directories under which to store log files
+
 Setar o diretório de log diferente para cada réplica.
-log.dirs=/tmp/kafka-logs
+
+    log.dirs=/tmp/kafka-logs
+
+&nbsp;
 
 Setar uma porta diferente para cada répica.
-listeners=PLAINTEXT://:9092
+
+    listeners=PLAINTEXT://:9092
+
+&nbsp;
 
 Inserir também o seguinte parâmetro de acordo com o número de réplicas que desejar:
-############################# Replication Factor Config #############################
-default.replication.factor = 3
 
-Obs.: Os tópicos devem ser recriados após a configuração de replicação. Para recriar os tópicos, apagar os dados da pasta configurada no parâmetro log.dirs. 
+    ############################# Replication Factor Config #############################
+    default.replication.factor = 3
+
+&nbsp;
+
+Obs.: Os tópicos devem ser recriados após a configuração de replicação. Para recriar os tópicos, apagar os dados da pasta configurada no parâmetro log.dirs.
